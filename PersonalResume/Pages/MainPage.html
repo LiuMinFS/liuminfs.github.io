@@ -18,9 +18,10 @@
         <div id="btn3" class="menubtn" onclick="btnClick('3')">未来规划<span style="color:steelblue;font-size:2rem;">&#9786;</span></div>
         <div id="btn4" class="menubtn" onclick="btnClick('4')">我的联系方式<span style="color:red;font-size:2rem;">&#9742;</span></div>
         <img src="../Images/music.gif" onclick="checkBGMusic();" class="bgmusic_img" id="bgimg" />
-        <marquee class="bgmusic_txt" id="musicname" direction="left" behavior="scroll" scrollamount="3" scrolldelay="0" loop="-1"></marquee>
-        <audio controls="controls" autoplay="autoplay" hidden="hidden" id="bgmusic">
-            <!--setMusic方法动态加载音频-->
+        <marquee class="bgmusic_txt" id="musicname" direction="left" behavior="scroll" scrollamount="3" scrolldelay="0" loop="-1">Somewhere.mp3</marquee>
+        <audio controls="controls" autoplay="autoplay" hidden="hidden" id="bgmusic" loop="-1">
+            <!--setMusic方法动态加载音频--><!--移除，只留一首bgm-->
+            <source src="../Music/Somewhere.mp3" type="audio/mpeg" />
         </audio>
     </div>
     <div class="bgcontent">

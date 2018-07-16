@@ -1,6 +1,6 @@
 ﻿window.onload = function () {
     //doLoadCss();
-    setMusic();//设定背景音乐
+    //setMusic();//设定背景音乐
     setContentHeight();//设定内容高度以适应不同显示器
     setContentPage();
     //setCodeProtector();
@@ -100,30 +100,30 @@ function checkBGMusic() {
     }
 }
 
-function setMusic() {
-    var arr = ["../Music/MySoul.mp3", "../Music/樱花樱花想见你.mp3", "../Music/Somewhere.mp3"];
-    var myAudio = document.getElementById("bgmusic");
-    var name = document.getElementById("musicname");
-    myAudio.preload = true;
-    myAudio.controls = true;
-    myAudio.src = arr.pop();
-    name.innerHTML = getMusicName(myAudio.src.toString());
-    myAudio.addEventListener('ended', playEndedHandler, false);
-    myAudio.play();
-    myAudio.loop = false;//禁止循环，否则无法触发ended事件 
-    function playEndedHandler() {
-        myAudio.src = arr.pop();
-        myAudio.play();
-        name.innerHTML = getMusicName(myAudio.src.toString());
-        !arr.length && myAudio.removeEventListener('ended', playEndedHandler, false);//只有一个元素时解除绑定 
-    }
-}
+//function setMusic() {
+//    var arr = ["../Music/MySoul.mp3", "../Music/樱花樱花想见你.mp3", "../Music/Somewhere.mp3"];
+//    var myAudio = document.getElementById("bgmusic");
+//    var name = document.getElementById("musicname");
+//    myAudio.preload = true;
+//    myAudio.controls = true;
+//    myAudio.src = arr.pop();
+//    name.innerHTML = getMusicName(myAudio.src.toString());
+//    myAudio.addEventListener('ended', playEndedHandler, false);
+//    myAudio.play();
+//    myAudio.loop = false;//禁止循环，否则无法触发ended事件 
+//    function playEndedHandler() {
+//        myAudio.src = arr.pop();
+//        myAudio.play();
+//        name.innerHTML = getMusicName(myAudio.src.toString());
+//        !arr.length && myAudio.removeEventListener('ended', playEndedHandler, false);//只有一个元素时解除绑定 
+//    }
+//}
 
-function getMusicName(path) {
-    var index = path.lastIndexOf('/');
-    var name = path.substring(index + 1, path.length);
-    return name;
-}
+//function getMusicName(path) {
+//    var index = path.lastIndexOf('/');
+//    var name = path.substring(index + 1, path.length);
+//    return name;
+//}
 
 function btnClick(index) {
     var btn = document.getElementById("btn" + index);
