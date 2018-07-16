@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>个人简介</title>
+    <title>Welcome to my website!</title>
     <script src="../Scripts/vue.min.js"></script>
     <script src="../Scripts/jquery-3.3.1.min.js"></script>
     <link href="../Css/mainpage.css" rel="stylesheet" />
@@ -12,10 +12,10 @@
 <body>
     <div id="titleimg" class="titleimg"></div>
     <div id="menubar" class="menubar">
-        <div id="btn1" class="menubtn" onclick="btnClick('0')">首页<span style="color:mediumpurple;font-size:2rem;">&#9770;</span></div>
-        <div id="btn2" class="menubtn" onclick="btnClick('1')">个人魅力<span style="color:mediumvioletred;font-size:2rem;">&#9829;</span></div>
-        <div id="btn3" class="menubtn" onclick="btnClick('2')">人生旅途<span style="color:gold;font-size:2rem;">&#9835;</span></div>
-        <div id="btn4" class="menubtn" onclick="btnClick('3')">未来规划<span style="color:steelblue;font-size:2rem;">&#9786;</span></div>
+        <div id="btn0" class="menubtn_hover" onclick="btnClick('0')">首页<span style="color:mediumpurple;font-size:2rem;">&#9770;</span></div>
+        <div id="btn1" class="menubtn" onclick="btnClick('1')">个人魅力<span style="color:mediumvioletred;font-size:2rem;">&#9829;</span></div>
+        <div id="btn2" class="menubtn" onclick="btnClick('2')">人生旅途<span style="color:gold;font-size:2rem;">&#9835;</span></div>
+        <div id="btn3" class="menubtn" onclick="btnClick('3')">未来规划<span style="color:steelblue;font-size:2rem;">&#9786;</span></div>
         <div id="btn4" class="menubtn" onclick="btnClick('4')">我的联系方式<span style="color:red;font-size:2rem;">&#9742;</span></div>
         <img src="../Images/music.gif" onclick="checkBGMusic();" class="bgmusic_img" id="bgimg" />
         <marquee class="bgmusic_txt" id="musicname" direction="left" behavior="scroll" scrollamount="3" scrolldelay="0" loop="-1"></marquee>
@@ -25,11 +25,38 @@
     </div>
     <div class="bgcontent">
         <div id="content" class="content" data-pageindex="0">
-            <div class="contentpage" style="height:300px;left:0px;">首页</div>
-            <div class="contentpage" style="height:300px;left:110px;">个人魅力</div>
-            <div class="contentpage" style="height:300px;left:220px;">人生旅途</div>
-            <div class="contentpage" style="height:300px;left:330px;">未来规划</div>
-            <div class="contentpage" style="height:300px;left:440px;">联系方式</div>
+            <div class="contentpage" id="firstpage">
+                <div class="firstpage">
+                    <div class="fp_titleimg"></div>
+                </div>
+            </div>
+            <div class="contentpage" id="characterpage">个人魅力</div>
+            <div class="contentpage" id="experiencepage">人生旅途</div>
+            <div class="contentpage" id="furturepage">未来规划</div>
+            <div class="contentpage" id="contactpage">
+                <div class="contactpage">
+                    <div class="contacticon">
+                        <img src="../Images/qqicon.png" class="contacticon_img" />
+                        <div class="contacticon_txt">QQ:1120124843</div>
+                        <div class="contacticon_msgbox" style="background-image:url(../Images/qqbarcode.jpg);">
+                        </div>
+                    </div>
+                    <div class="contacticon">
+                        <img src="../Images/wxicon.png" class="contacticon_img" />
+                        <div class="contacticon_txt">wx:lm031512119</div>
+                        <div class="contacticon_msgbox" style="background-image:url(../Images/wxbarcode.jpg);">
+                        </div>
+                    </div>
+                    <div class="contacticon">
+                        <img src="../Images/sjicon.png" class="contacticon_img" />
+                        <div class="contacticon_txt">phone:15921011940</div>
+                    </div>
+                    <div class="contacticon">
+                        <img src="../Images/yxicon.png" class="contacticon_img" />
+                        <div class="contacticon_txt">e-mail:1120124843@qq.com</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div style="position:absolute;bottom:15px;color:white;width:100%;text-align:center;" id="copyright">&copy;本站所有内容版权归<u>刘旻</u>所有，仅用于个人学习研究，<br />请勿用于任何商业用途，谢谢!</div>

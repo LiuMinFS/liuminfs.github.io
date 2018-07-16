@@ -38,13 +38,13 @@ $(window).resize(function () {
 function setContentPage() {
     var content = document.getElementById("content");
     if (content) {
-        var pages = content.getElementsByTagName("div");
+        var pages = content.children;
         var pageindex = content.getAttribute("data-pageindex");
         var width = content.offsetWidth;
         //重新设定page的位置
         for (i = 0; i < pages.length; i++) {
             var page = pages[i];
-            page.style.left = (width * (i - pageindex)).toString() + "px";
+            page.style.left = (width * (i - pageindex) + (width * 0.4 / 2)).toString() + "px";//宽度为70%，使内容定位在页面中间需要加上width * 0.3 / 2
             page.style.height = content.style.height;
         }
     }
@@ -126,6 +126,14 @@ function getMusicName(path) {
 }
 
 function btnClick(index) {
+    var btn = document.getElementById("btn" + index);
+    if (btn) {
+        var btns = btn.parentNode.getElementsByTagName("div");
+        for (i = 0; i < btns.length; i++) {
+            btns[i].className = "menubtn";
+        }
+        btn.className = "menubtn_hover";
+    }
     var content = document.getElementById("content");
     content.setAttribute("data-pageindex", index);
     setContentPage();
