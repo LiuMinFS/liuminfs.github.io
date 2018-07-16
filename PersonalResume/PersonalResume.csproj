@@ -88,6 +88,7 @@
     <Content Include="Music\Somewhere.mp3" />
     <Content Include="Music\樱花樱花想见你.mp3" />
     <Content Include="Music\MySoul.mp3" />
+    <Content Include="Pages\index.html" />
     <Content Include="Pages\MainPage.html" />
     <Content Include="Pages\WelcomePage.html" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
