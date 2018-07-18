@@ -3,11 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Welcome to my website!</title>
-    <script src="../Scripts/vue.min.js"></script>
-    <script src="../Scripts/jquery-3.3.1.min.js"></script>
     <link href="../Css/mainpage.css" rel="stylesheet" />
     <link href="../Css/main.css" rel="stylesheet" />
-    <script src="../JavaSripts/mainpage.js"></script>
 </head>
 <body>
     <div id="titleimg" class="titleimg"></div>
@@ -28,7 +25,15 @@
         <div id="content" class="content" data-pageindex="0">
             <div class="contentpage" id="firstpage">
                 <div class="firstpage">
-                    <div class="fp_titleimg"></div>
+                    <div class="fp_titleimg" id="fp_titleimg"></div>
+                    <div class="fp_title" id="title1">我是刘旻<br /><span style="font-size:3rem;font-family:'Adobe Arabic';font-weight:normal;">My name's LiuMin</span></div>
+                    <div class="fp_title" style="opacity:0;" id="title2">
+                        Welcome to my world!<br /><span style="font-size:3rem;font-family:'Adobe Arabic';font-weight:normal;">
+                            My name is Min, and my career is a programmer. This is my first homepage, and thank you for your visiting. If you can, please leave your comments or write me a message at the bottom of the page, thanks again. 
+                        </span>
+                    </div>
+                    <div id="trigger" class="trigger" v-on:click="switchContent">点此开始<br />&#8681;</div>
+                    <div id="fp_content" class="fp_content"></div>
                 </div>
             </div>
             <div class="contentpage" id="characterpage">个人魅力</div>
@@ -61,6 +66,10 @@
         </div>
     </div>
     <div style="position:absolute;bottom:15px;color:white;width:100%;text-align:center;" id="copyright">&copy;本站所有内容版权归<u>刘旻</u>所有，仅用于个人学习研究，<br />请勿用于任何商业用途，谢谢!</div>
-    <script src="../VueJS/mainpage.js"></script>
+    <!--Scripts-->
+    <script src="../Scripts/vue.min.js"></script>
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../VueJS/v_mainpage.js"></script>
+    <script src="../JavaSripts/mainpage.js"></script>
 </body>
 </html>

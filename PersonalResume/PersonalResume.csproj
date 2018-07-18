@@ -96,7 +96,7 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
-    <Content Include="VueJS\mainpage.js" />
+    <Content Include="VueJS\v_mainpage.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -6,6 +6,21 @@
     //setCodeProtector();
 }
 
+var blink_trigger = false;
+var blink = setInterval("changeFontColor()", 1000);
+
+function changeFontColor() {
+    var t = document.getElementById("trigger");
+    if (blink_trigger) {
+        t.style.color = "#000";
+        blink_trigger = false;
+    }
+    else {
+        t.style.color = "#fff";
+        blink_trigger = true;
+    }
+}
+
 function setCodeProtector() {
     //屏蔽键盘事件
     document.onkeydown = function () {

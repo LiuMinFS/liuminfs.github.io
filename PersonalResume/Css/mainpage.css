@@ -118,13 +118,6 @@
     overflow-y: auto;
 }
 
-.firstpage {
-    width: 90%;
-    height: 90%;
-    background: linear-gradient(rgb(235,235,235),rgb(255,255,255));
-    margin-top: 2%;
-}
-
 .contactpage {
     width: 90%;
     height: 90%;
@@ -137,7 +130,7 @@
 .contacticon {
     height: 100px;
     width: auto;
-    max-width:15%;
+    max-width: 15%;
     margin: 10% 5%;
     justify-content: center;
     text-align: center;
@@ -161,8 +154,8 @@
     border: 1px solid rgba(66,200,200,0.5);
     background: rgba(255,255,255,0.1);
     padding: 5px 20px 5px 20px;
-    overflow-wrap:break-word;
-    word-break:break-all;
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 .contacticon_msgbox {
@@ -177,16 +170,64 @@
     width: 0px;
 }
 
-    .contacticon_img:hover ~ .contacticon_msgbox {
-        height:200px;
-        width: 200px;
-        transition:all 0.5s;
-    }
+.contacticon_img:hover ~ .contacticon_msgbox {
+    height: 200px;
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.firstpage {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgb(235,235,235),rgb(255,255,255));
+    margin-top: 2%;
+}
 
 .fp_titleimg {
-    width:100%;
-    height:100%;
-    background-image:url(../Images/bgzp.jpg);
-    background-repeat:no-repeat;
-    background-size:100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/bgzp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.fp_title {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'MS PMincho';
+    color: black;
+    z-index: 999;
+    transition: all 1s;
+}
+
+.trigger {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-family: 'Microsoft YaHei UI';
+    transition: all 1s;
+    color: #000;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.fp_content {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 0px;
+    width: 100%;
+    background: linear-gradient(rgba(235,235,235,1) 40%,rgba(235,235,235,0) 100%);
+    transition: all 1s;
 }
