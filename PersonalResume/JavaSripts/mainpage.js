@@ -153,3 +153,12 @@ function btnClick(index) {
     content.setAttribute("data-pageindex", index);
     setContentPage();
 }
+
+function writeRemark() {
+    $.getJSON("../Files/remarks.json", function (data) {
+        var remarks = data["remarks"];
+        $.each(remarks, function (remarks, value) {
+            alert("date:" + value.date + ";remark:" + value.remark);
+        })
+    })
+}

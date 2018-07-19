@@ -228,6 +228,87 @@
     left: 0%;
     height: 0px;
     width: 100%;
-    background: linear-gradient(rgba(235,235,235,1) 40%,rgba(235,235,235,0) 100%);
+    background: linear-gradient(rgba(235,235,235,1) 40%,rgba(235,235,235,0.3) 100%);
     transition: all 1s;
+    font-size:1.4rem;
+    font-weight:normal;
+    font-family:'MS PMincho';
+    color:black;
+    overflow:hidden;
 }
+
+.paragraph {
+    margin-top:5%;
+    margin-bottom:5%;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.paragraph_txt {
+    padding:1%;
+    font-size: 3rem;
+    width: 70%;
+    font-family:STXingkai;
+    color:rgba(33,33,33,0.8);
+}
+
+.paragraph_img {
+    width: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    text-align:center;
+    color:white;
+    min-height:100px;
+    max-height:300px;
+    min-width:100px;
+    max-width:300px;
+}
+
+.paragraph_title {
+    position:relative;
+    top:0%;
+    left:0%;
+    width:100%;
+    font-size:2.4rem;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+
+.horizontalline {
+    width:100%;
+    height:0px;
+    border:0px solid #000;
+    box-shadow:0px 0px 10px 1px rgba(55,55,55,0.5);
+}
+
+.remarktxt {
+    padding:10px;
+    font-size:1.4rem;
+    height:100px;
+    width:80%;
+    border:2px solid rgba(0,0,0,0.3);
+    box-shadow:1px 1px 10px 3px rgb(235,235,235);
+    border-radius:10px;
+}
+
+.remarkbtn {
+    width: 10%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgba(235,235,235,0.5);
+    background: rgb(250,250,250);
+    text-shadow:1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+    .remarkbtn:hover {
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5) inset;
+        text-shadow: 1px 1px 1px 1px rgba(150,150,150,0.5);
+    }

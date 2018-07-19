@@ -9,11 +9,11 @@
 <body>
     <div id="titleimg" class="titleimg"></div>
     <div id="menubar" class="menubar">
-        <div id="btn0" class="menubtn_hover" onclick="btnClick('0')">首页<span style="color:mediumpurple;font-size:2rem;">&#9770;</span></div>
-        <div id="btn1" class="menubtn" onclick="btnClick('1')">个人魅力<span style="color:mediumvioletred;font-size:2rem;">&#9829;</span></div>
-        <div id="btn2" class="menubtn" onclick="btnClick('2')">人生旅途<span style="color:gold;font-size:2rem;">&#9835;</span></div>
-        <div id="btn3" class="menubtn" onclick="btnClick('3')">未来规划<span style="color:steelblue;font-size:2rem;">&#9786;</span></div>
-        <div id="btn4" class="menubtn" onclick="btnClick('4')">我的联系方式<span style="color:red;font-size:2rem;">&#9742;</span></div>
+        <div id="btn0" class="menubtn_hover" onclick="btnClick('0')">首页<span style="color:white;font-size:2rem;">&#9770;</span></div>
+        <!--<div id="btn1" class="menubtn" onclick="btnClick('1')">个人魅力<span style="color:white;font-size:2rem;">&#9829;</span></div>
+    <div id="btn2" class="menubtn" onclick="btnClick('2')">人生旅途<span style="color:white;font-size:2rem;">&#9835;</span></div>
+    <div id="btn3" class="menubtn" onclick="btnClick('3')">未来规划<span style="color:white;font-size:2rem;">&#9786;</span></div>-->
+        <div id="btn4" class="menubtn" onclick="btnClick('1')">我的联系方式<span style="color:white;font-size:2rem;">&#9742;</span></div>
         <img src="../Images/music.gif" onclick="checkBGMusic();" class="bgmusic_img" id="bgimg" />
         <marquee class="bgmusic_txt" id="musicname" direction="left" behavior="scroll" scrollamount="3" scrolldelay="0" loop="-1">Somewhere.mp3</marquee>
         <audio controls="controls" autoplay="autoplay" hidden="hidden" id="bgmusic" loop="-1">
@@ -26,19 +26,74 @@
             <div class="contentpage" id="firstpage">
                 <div class="firstpage">
                     <div class="fp_titleimg" id="fp_titleimg"></div>
-                    <div class="fp_title" id="title1">我是刘旻<br /><span style="font-size:3rem;font-family:'Adobe Arabic';font-weight:normal;">My name's LiuMin</span></div>
+                    <div class="fp_title" id="title1">我是刘旻<br /><span style="font-size:3rem;font-family:'Adobe Arabic';font-weight:normal;">欢迎访问我的个人主页</span></div>
                     <div class="fp_title" style="opacity:0;" id="title2">
                         Welcome to my world!<br /><span style="font-size:3rem;font-family:'Adobe Arabic';font-weight:normal;">
-                            My name is Min, and my career is a programmer. This is my first homepage, and thank you for your visiting. If you can, please leave your comments or write me a message at the bottom of the page, thanks again. 
+                            My name is Min, and my career is a programmer. This is my first homepage, and thank you for your visiting. If you can, please leave your comments or write me a message at the bottom of the page, thanks again.
                         </span>
                     </div>
                     <div id="trigger" class="trigger" v-on:click="switchContent">点此开始<br />&#8681;</div>
-                    <div id="fp_content" class="fp_content"></div>
+                    <div id="fp_content" class="fp_content">
+                        <div class="paragraph">
+                            <div class="paragraph_txt">
+                                我于2016年6月毕业于上海市工程技术大学，从2016年2月份开始就已经在IAC实习。渐渐地，喜欢上了程序猿这样的工作（当然我更喜欢攻城狮的称呼）。以个人来讲，我是个性格内向的人，同时也是个
+                                讨厌心机的人，因此不喜欢在工作掺杂过多的个人情感，而走技术路线的程序猿一职无疑很符合我的职业规划。<br /><br />
+                                我喜欢接触新的知识，不断地提升自己的能力。也乐于和同行分享一些技术性的话题，相互之间学习。在这个高速发展的信息时代，唯有不断提高自身能力，才能与时俱进。
+                            </div>
+                            <div class="paragraph_img" style="background-image: url('../Images/p1.jpg');"></div>
+                        </div>
+                        <div class="horizontalline"></div>
+                        <div class="paragraph">
+                            <div class="paragraph_title">热爱生活</div>
+                            <div class="paragraph_img" style="background-image: url('../Images/p3.jpg');"></div>
+                            <div class="paragraph_txt">
+                                我喜欢寻觅生活中点点滴滴的乐趣，冬日的飘雪，夏日的骄阳，午后的小憩，黄昏的静谧。
+                            </div>
+                        </div>
+                        <div class="paragraph">
+                            <div class="paragraph_txt">
+                                咖啡伴着书香，音乐循着云羽。
+                            </div>
+                            <div class="paragraph_img" style="background-image: url('../Images/p2.jpg');"></div>
+                        </div>
+                        <div class="paragraph" style="justify-content:flex-start;">
+                            <div class="paragraph_txt" style="width:100%">
+                                我喜欢设计，喜欢在生活中留下专属于我的足迹。
+                            </div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p5.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p6.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p8.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p9.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p10.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p11.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p12.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p13.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p14.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p15.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p16.jpg');"></div>
+                            <div class="paragraph_img" style="background-image: url('../Images/Photos/p17.jpg');"></div>
+                        </div>
+                        <div class="horizontalline"></div>
+                        <div class="paragraph">
+                            <div class="paragraph_img" style="background-image: url('../Images/p7.jpg');"></div>
+                            <div class="paragraph_txt" style="width:50%">
+                                我是个动物热爱者，也是个游戏爱好者。如果你也是，那么很高兴我们有了共同语言。
+                            </div>
+                            <div class="paragraph_img" style="background-image: url('../Images/p18.jpg');"></div>
+                        </div>
+                        <div class="paragraph">
+                            <div class="paragraph_title">最后，如果愿意，请留下你的足迹</div>
+                            <div style="width:100%">
+                                <textarea id="txtRemark" class="remarktxt"></textarea>
+                                <input id="btnSubmit" type="button" value="留下" class="remarkbtn" onclick="writeRemark();" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="contentpage" id="characterpage">个人魅力</div>
+            <!--<div class="contentpage" id="characterpage">个人魅力</div>
             <div class="contentpage" id="experiencepage">人生旅途</div>
-            <div class="contentpage" id="furturepage">未来规划</div>
+            <div class="contentpage" id="furturepage">未来规划</div>-->
             <div class="contentpage" id="contactpage">
                 <div class="contactpage">
                     <div class="contacticon">

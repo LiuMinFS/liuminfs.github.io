@@ -20,7 +20,7 @@
             var title2 = document.getElementById("title2");
             var trigger = document.getElementById("trigger");
             titleimg.style.backgroundImage = "linear-gradient(rgba(235,235,235,0),rgba(235,235,235,1)),url(../Images/bgzp.jpg)";
-            content.style.height = "1000px";
+            content.style.height = "auto";
             title1.style.opacity = "0";
             title2.style.opacity = "1";
             trigger.innerHTML = "&#8679;<br />点此收缩";
