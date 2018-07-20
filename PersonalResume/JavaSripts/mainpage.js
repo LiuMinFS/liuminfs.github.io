@@ -156,9 +156,38 @@ function btnClick(index) {
 
 function writeRemark() {
     $.getJSON("../Files/remarks.json", function (data) {
-        var remarks = data["remarks"];
-        $.each(remarks, function (remarks, value) {
-            alert("date:" + value.date + ";remark:" + value.remark);
-        })
+        if (data) {
+            var remark = $("#txtRemark").val();
+            var date = getNowFormatDate();
+            if (remark == "") {
+                return;
+            }
+            else {
+                var json = '{"remark":"' + remark + '","date":"' + date + '"}';
+            }
+            //var str = '[{"name":"aa","age":"23"},{"name":"bb","age":"24"},{"name":"cc","age":"25"}]';
+            //var array = JSON.parse(str);
+            var js = JSON.parse(json);
+            data.remarks.push(js);
+            alert("此功能更新中~");
+        }
     })
+}
+
+function getNowFormatDate() {
+    var date = new Date();
+    var seperator1 = "-";
+    var seperator2 = ":";
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+    }
+    var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+        + " " + date.getHours() + seperator2 + date.getMinutes()
+        + seperator2 + date.getSeconds();
+    return currentdate;
 }

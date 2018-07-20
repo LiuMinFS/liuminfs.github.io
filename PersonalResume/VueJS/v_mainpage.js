@@ -1,7 +1,8 @@
-﻿var vm = new Vue({
+﻿var v_firstpage = new Vue({
     el: '#firstpage',
     data: {
-        trigger: true
+        trigger: true,
+        isShown: false
     },
     methods: {
         switchContent: function (e) {
@@ -35,7 +36,33 @@
             content.style.height = "0px";
             title1.style.opacity = "1";
             title2.style.opacity = "0";
-            trigger.innerHTML ="点此开始<br />&#8681;";
+            trigger.innerHTML = "点此开始<br />&#8681;";
+        },
+        showRemarks: function () {
+            $.getJSON("../Files/remarks.json", function (data) {
+                var remarks = data["remarks"];
+                var parent = document.getElementById("divRemarks");
+                parent.innerHTML = "";
+                $.each(remarks, function (remarks, value) {
+                    var divRemark = document.createElement("div");
+                    var divRremark = document.createElement("div");
+                    var divRdate = document.createElement("div");
+                    divRemark.className = "remark";
+                    divRdate.className = "remark_date";
+                    divRremark.className = "remark_remark";
+                    divRdate.innerHTML = value.date;
+                    divRremark.innerHTML = value.remark;
+                    divRemark.appendChild(divRremark);
+                    divRemark.appendChild(divRdate);
+                    parent.appendChild(divRemark);
+                })
+            });
+            this.isShown = true;
+        },
+        hideRemarks: function () {
+            var parent = document.getElementById("divRemarks");
+            parent.innerHTML = "";
+            this.isShown = false;
         }
     }
 })
