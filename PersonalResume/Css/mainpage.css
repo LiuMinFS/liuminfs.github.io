@@ -268,6 +268,26 @@
     max-width: 300px;
 }
 
+    .paragraph_img:hover ~ .bigpicture {
+        visibility: visible;
+    }
+
+.bigpicture {
+    visibility: hidden;
+    position: fixed;
+    left: 35%;
+    top: 40%;
+    height: 30%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+    .bigpicture:hover {
+        visibility: visible;
+    }
+
 .paragraph_title {
     position: relative;
     top: 0%;
@@ -333,23 +353,23 @@
 
 .btnShowRemarks_icon {
     font-size: 1.4rem;
-    font-family:Arial;
+    font-family: Arial;
 }
 
 .remarks {
     position: relative;
     width: 100%;
     height: auto;
-    display:block;
+    display: block;
 }
 
 .remark {
     width: 100%;
     height: auto;
     position: relative;
-    font-size:1.8rem;
-    border:1px solid rgba(255,255,255,0.5);
-    color:rgba(255,255,255,0.8);
+    font-size: 1.8rem;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.8);
 }
 
 .remark_remark {
@@ -361,16 +381,17 @@
     z-index: 0;
     font-size: 1.8rem;
     font-family: 'MS PMincho';
-    padding:1%;
+    padding: 1%;
 }
+
     .remark_remark:before {
-        content:"评论：";
+        content: "评论：";
     }
 
 .remark_date {
     position: relative;
     width: 90%;
-    text-align:right;
+    text-align: right;
     bottom: 0%;
     right: 0%;
     z-index: 1;
@@ -380,5 +401,5 @@
 }
 
     .remark_date:before {
-        content:"评论时间：";
+        content: "评论时间：";
     }

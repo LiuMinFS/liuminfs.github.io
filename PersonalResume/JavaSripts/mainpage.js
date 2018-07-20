@@ -191,3 +191,7 @@ function getNowFormatDate() {
         + seperator2 + date.getSeconds();
     return currentdate;
 }
+
+$(".paragraph_img").mouseenter(function () {
+        document.getElementById("bigpicture").style.backgroundImage = this.style.backgroundImage;
+})
