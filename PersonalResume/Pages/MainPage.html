@@ -17,8 +17,7 @@
         <img src="../Images/music.gif" onclick="checkBGMusic();" class="bgmusic_img" id="bgimg" />
         <marquee class="bgmusic_txt" id="musicname" direction="left" behavior="scroll" scrollamount="3" scrolldelay="0" loop="-1">Somewhere.mp3</marquee>
         <audio controls="controls" autoplay="autoplay" hidden="hidden" id="bgmusic" loop="-1">
-            <!--setMusic方法动态加载音频--><!--移除，只留一首bgm-->
-            <source src="../Music/Somewhere.mp3" type="audio/mpeg" />
+            <!--<source src="../Music/Somewhere.mp3" type="audio/mpeg" />-->
         </audio>
     </div>
     <div class="bgcontent">
@@ -56,7 +55,7 @@
                             </div>
                             <div class="paragraph_img" style="background-image: url('../Images/p2.jpg');"></div>
                         </div>
-                        <div class="paragraph" style="justify-content:flex-start;">
+                        <div class="paragraph" style="justify-content:flex-start;" id="pictureboard">
                             <div class="paragraph_txt" style="width:100%">
                                 我喜欢设计，喜欢在生活中留下专属于我的足迹。
                             </div>
@@ -77,10 +76,9 @@
                         <div class="horizontalline"></div>
                         <div class="paragraph">
                             <div class="paragraph_img" style="background-image: url('../Images/p7.jpg');"></div>
-                            <div class="paragraph_txt" style="width:50%">
+                            <div class="paragraph_txt">
                                 我是个动物热爱者，也是个游戏爱好者。如果你也是，那么很高兴我们有了共同语言。
                             </div>
-                            <div class="paragraph_img" style="background-image: url('../Images/p18.jpg');"></div>
                         </div>
                         <div class="paragraph">
                             <div class="paragraph_title">想法或者建议</div>

@@ -73,7 +73,6 @@
     <Content Include="Css_Moble\mainpage.css" />
     <Content Include="Images\bgcontent.jpg" />
     <Content Include="Images\bgzp.jpg" />
-    <Content Include="Images\p18.jpg" />
     <Content Include="Images\Photos\p10.jpg" />
     <Content Include="Images\Photos\p11.jpg" />
     <Content Include="Images\Photos\p12.jpg" />
@@ -96,7 +95,6 @@
     <Content Include="Images\bmusic.gif" />
     <Content Include="Images\qqicon.png" />
     <Content Include="Images\sjicon.png" />
-    <Content Include="Images\Web_Login.gif" />
     <Content Include="Images\titleimg.jpg" />
     <Content Include="Images\wxbarcode.jpg" />
     <Content Include="Images\wxicon.png" />

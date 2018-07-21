@@ -4,6 +4,7 @@
     setContentHeight();//设定内容高度以适应不同显示器
     setContentPage();
     //setCodeProtector();
+    setSrc();
 }
 
 var blink_trigger = false;
@@ -160,6 +161,8 @@ function writeRemark() {
             var remark = $("#txtRemark").val();
             var date = getNowFormatDate();
             if (remark == "") {
+                alert("请先添加评论~");
+                $("#txtRemark").focus();
                 return;
             }
             else {
@@ -195,3 +198,16 @@ function getNowFormatDate() {
 $(".paragraph_img").mouseenter(function () {
         document.getElementById("bigpicture").style.backgroundImage = this.style.backgroundImage;
 })
+
+function setSrc() {
+    var srcs = ['p5.jpg', 'p6.jpg', 'p8.jpg', 'p9.jpg', 'p10.jpg', 'p11.jpg', 'p12.jpg', 'p13.jpg', 'p14.jpg', 'p15.jpg', 'p16.jpg', 'p17.jpg'];
+    var source = document.createElement("source");
+    source.src = getPreUrl() + "/Music/Somewhere.mp3";
+    var bgmusic = document.getElementById("bgmusic");
+    bgmusic.appendChild(source);
+}
+
+function getPreUrl() {
+    var url = window.location.href;
+    return url.substring(0, url.indexOf("Pages"));
+}
