@@ -5,6 +5,20 @@
     <title></title>
 </head>
 <body>
-    <a href="https://liuminfs.github.io/PersonalResume/Pages/MainPage.html">跳转到我的个人主页~</a>
+    <a href="https://liuminfs.github.io/PersonalResume/Pages/MainPage.html">跳转到我的个人主页......<div id="timetick"></div></a>
 </body>
+<script>
+    window.onload=window.setInterval(setTimeTick(),1000);
+    var tt=5;
+    function setTimeTick(){
+        document.getElementById("timetick").innerHtml=tt;
+        if(tt>0){
+            tt=tt-1;
+        }
+        else
+        {
+            window.open("http://www.baidu.com");
+        }
+    }
+</script>
 </html>
