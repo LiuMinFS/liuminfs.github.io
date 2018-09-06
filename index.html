@@ -9,16 +9,26 @@
 </body>
 <script language="javascript">
     window.onload = timer;
+<<<<<<< HEAD
     var tt = 5;
+=======
+    var tt=5;
+>>>>>>> 96c6820b3a060e240aecab8ae6070f13f5ee56f8
     var timer = setInterval(function setTimeTick() {
         document.getElementById("timetick").innerText = tt;
         if (tt > 0) {
             tt = tt - 1;
         }
         else {
+<<<<<<< HEAD
             clearInterval(timer);
             window.location.href = "http://liuminfs.github.io/PersonalResume/Pages/MainPage.html";
 
+=======
+            window.open("http://liuminfs.github.io/PersonalResume/Pages/MainPage.html");
+            clearInterval(timer);
+	    window.close();
+>>>>>>> 96c6820b3a060e240aecab8ae6070f13f5ee56f8
         }
     }, 1000);
 </script>
