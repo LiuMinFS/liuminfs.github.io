@@ -12,12 +12,13 @@
     var tt=5;
     var timer = setInterval(function setTimeTick() {
         document.getElementById("timetick").innerText = tt;
-        if (tt >= 0) {
+        if (tt > 0) {
             tt = tt - 1;
         }
         else {
             window.open("http://liuminfs.github.io/PersonalResume/Pages/MainPage.html");
             clearInterval(timer);
+	    window.close();
         }
     }, 1000);
 </script>
