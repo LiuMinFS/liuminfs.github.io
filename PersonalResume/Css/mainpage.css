@@ -322,6 +322,7 @@
     width: 10%;
     height: 100%;
     border: none;
+    border-radius:0px;
     float: right;
     font-size: 2rem;
     font-weight: normal;
